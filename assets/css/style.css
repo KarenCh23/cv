@@ -1574,6 +1574,13 @@ body.is-preload #footer {
 }
 
 @media screen and (max-width: 992px) {
+	
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
 
   html {
     font-size: 95%;
