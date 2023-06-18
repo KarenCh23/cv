@@ -830,12 +830,14 @@ img.skill-logo {
   width: 7rem;
   padding: 0.5rem;
   border-radius: 1rem;
+  filter: drop-shadow(0 10px 1px #15111a);
 }
 
 img.soft-skills-icon {
   width: 11rem;
   border-radius: 1.5rem;
   margin-right: 1rem;
+  filter: drop-shadow(0 10px 2px #15111a);
 }
 
 /*? ==== BLUE LIGHT ICONS ANIMATION ==== */
