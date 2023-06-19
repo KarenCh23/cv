@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 /* For firefox browsers */
 * {
   scrollbar-width: thin;
-  scrollbar-color:rgba(255, 255, 255, 0.3) #0a182ba9;
+  scrollbar-color:rgba(168, 212, 226, 0.4) #0a182ba9;
 }
 
 ol,
@@ -836,6 +836,24 @@ img.soft-skills-icon {
   width: 11rem;
   border-radius: 1.5rem;
   margin-right: 1rem;
+}
+
+/*? === Fading skills icons animation === */
+img.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /*? ==== BLUE LIGHT ICONS ANIMATION ==== */
@@ -1828,6 +1846,10 @@ body.is-preload #footer {
 
   .other-tools {
     text-align: center;
+  }
+
+  section.skillbox {
+    justify-content: center;
   }
 
   div.contact-box {
