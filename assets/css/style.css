@@ -111,10 +111,9 @@ body {
 
 /* Scrollbar custom */
 body::-webkit-scrollbar {
-  background-color: #090A0C;
+  background-color: #090a0c;
   width: 15px;
   border-radius: 10px;
-
 }
 
 body::-webkit-scrollbar-track {
@@ -137,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 /* For firefox browsers */
 * {
   scrollbar-width: thin;
-  scrollbar-color:rgba(168, 212, 226, 0.4) #0a182ba9;
+  scrollbar-color: rgba(168, 212, 226, 0.4) #0a182ba9;
 }
 
 ol,
@@ -620,7 +619,7 @@ img.school-logo {
 
 section.formation-box {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
 }
 
@@ -672,7 +671,6 @@ p.last {
 
 div#skillanim {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   height: 6.5rem;
 }
@@ -693,14 +691,12 @@ section.workbox {
 
 div.workbox-block {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
   width: 100%;
 }
 
 div.experience-infos {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -788,7 +784,6 @@ div.work-img {
 
 section.skillbox {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
@@ -800,7 +795,6 @@ figure#front-end,
 #other-tools,
 div#soft-skills {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
@@ -809,10 +803,9 @@ div#soft-skills {
 .skill-category,
 .other-tools {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 25rem;
   margin-bottom: 1.5rem;
 }
 
@@ -849,13 +842,21 @@ img.fade {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*? ==== BLUE LIGHT ICONS ANIMATION ==== */
@@ -924,7 +925,6 @@ section#gallery-box figure:hover {
 section#gallery-box figure img {
   width: 100%;
   height: 100%;
-
 }
 
 section#gallery-box figure:nth-child(1) {
@@ -959,7 +959,6 @@ section#gallery-box figure figcaption {
 .expanded {
   transform: scale(5.5, 2.8);
   z-index: 2;
- 
 }
 
 div#graphic-gallery figure.expanded {
@@ -982,14 +981,12 @@ div.full figure:not(.expanded) {
 
 div.contact-box {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   gap: 4rem;
 }
 
 div.contact-text {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5rem;
@@ -1021,7 +1018,6 @@ a.contact-email {
   margin: 2rem;
   border-radius: 100%;
   box-shadow: 5px 5px 19px 11px #111111;
-
 }
 
 a.contact-linkedin,
@@ -1695,31 +1691,31 @@ button#back-home {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes fadeInDown {
+}
+@-webkit-keyframes fadeInDown {
   0% {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
-  }
-  @keyframes fadeInDown {
+}
+@keyframes fadeInDown {
   0% {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
-  } 
+}
 
 /* Footer */
 
@@ -1868,7 +1864,6 @@ body.is-preload #footer {
   }
 
   div.contact-text {
-    flex-direction: row;
     margin-left: 0;
     gap: 0;
   }
@@ -1906,7 +1901,6 @@ body.is-preload #footer {
   .expanded {
     transform: scale(2.7, 2);
     z-index: 2;
-    
   }
 
   div#graphic-gallery figure.expanded {
