@@ -5,7 +5,7 @@ let skills = [
   "HTML & CSS",
   "JavaScript",
   "React",
-  "art & creativity",
+  "Typescript",
   "PHP & MySQL",
 ].map((s) => `${s}.`);
 const delay = 2;
