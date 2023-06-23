@@ -862,7 +862,6 @@ img.fade {
 /*? ==== BLUE LIGHT ICONS ANIMATION ==== */
 
 :is(
-    img.soft-skills-icon,
     button#secret-code,
     button#back-home,
     button#download-pdf,
