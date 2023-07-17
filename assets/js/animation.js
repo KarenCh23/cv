@@ -67,6 +67,7 @@ let phrases = [
   "Bienvenue !",
   "Je m'appelle Karen",
   "développeuse web front-end",
+  "webdesigner",
   "découvrez mon profil !",
 ];
 
