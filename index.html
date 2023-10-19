@@ -7,12 +7,12 @@
   <title>Karen Chamand - Web developper</title>
   <!-- SEO -->
   <meta name="description" content="Je suis développeuse web front-end basée en Bretagne.">
-  <meta property="og:title" content="Karen Chamand - Web developper">
+  <meta property="og:title" content="Karen Chamand - Front-end developer">
   <meta property="og:description" content="Je suis développeuse web front-end basée en Bretagne.">
   <meta property="og:image" content="./assets/images/logo_thumbnail.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Karen Chamand-Chatard - CV">
-
+<!-- Style -->
   <link rel="stylesheet" href="assets/css/normalize.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" type="image/png" href="./images/logo_thumbnail.png">
@@ -53,10 +53,10 @@
         <h2 class="major">Formation</h2>
         <section class="formation-box">
           <figure class="school-img">
-            <img class="school-logo" src="./images/formation_logos/oclock_logo.png" alt="oclock logo">
-            <img class="school-logo" src="./images/formation_logos/logo_openclassrooms.png" alt="openclassrooms logo">
-            <img class="school-logo" src="./images/formation_logos/eba_versailles.jpg" alt="eba versailles logo">
-            <img class="school-logo" src="./images/formation_logos/sorbonne_université.jpg" alt="sorbonne logo">
+            <img class="school-logo" src="./images/formation_logos/oclock_logo.png" alt="oclock logo" loading="lazy">
+            <img class="school-logo" src="./images/formation_logos/logo_openclassrooms.png" alt="openclassrooms logo" loading="lazy">
+            <img class="school-logo" src="./images/formation_logos/eba_versailles.jpg" alt="eba versailles logo" loading="lazy">
+            <img class="school-logo" src="./images/formation_logos/sorbonne_université.jpg" alt="sorbonne logo" loading="lazy">
           </figure>
           <div class="formation-year">
             <time datetime="2023">2023</time>
@@ -66,7 +66,7 @@
             <time datetime="2009">2009</time>
           </div>
           <div class="formation-text">
-            <p><b>En cours -</b> Formation Développeuse Web & Web Mobile,<br>
+            <p>Formation Développeuse Web & Web Mobile,<br>
               <i>Ecole O'Clock</i>
             </p>
             <p>Formation certifiée HTML5 / CSS3<br>
@@ -86,6 +86,26 @@
       <article id="experience">
         <h2 class="major">Expérience</h2>
         <section class="workbox">
+
+          <div class="workbox-block">
+            <div class="work-img">
+              <img class="circle-logo" src="./images//work_logos/quali_extra-logo.png" loading="lazy">
+            </div>
+            <div class="experience-text">
+              <p>
+              <h4 class="title-job">Développeuse Front-End React</h4>
+              <em class="job-mission">Développement d'une app sous
+                Next.JS (React) | Node.js (back-end) <br>Intégration de maquettes depuis Figma</em>
+              </p>
+              <a href="https://www.linkedin.com/in/karen-chamand-chatard/" class="linkedin-link"
+                target="_blank">
+                <i>En savoir plus</i><span class="arrow">&#8811;</span></a>
+            </div>
+            <div class="experience-infos">
+              <span id="qualiExtra">QualiExtra<br>
+                <time datetime="2023-08">Depuis Août 2023</time>
+            </div>
+          </div>
           <div class="workbox-block">
             <div class="work-img">
               <img class="circle-logo" src="./images/home_profil-logo.png" loading="lazy">
@@ -194,7 +214,7 @@
           </div>
         </section>
       </article>
-<!-- Competences / skills -->
+<!-- Skills -->
       <article id="competences">
         <div id="skillanim">
           <h2 class="major" id="skill-title"></h2>
