@@ -898,7 +898,7 @@ div#gallery-btn {
 :is(#graphic-gallery, #gallery-box) figure {
   margin: 0;
   width: 24%;
-  height: 9rem;
+  height: 9.5rem;
   transition: 1s;
   display: inline-block;
   position: relative;
@@ -933,17 +933,25 @@ section#gallery-box figure:nth-child(4) {
 section#gallery-box figure figcaption {
   margin: 0;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0 0 0 / 66%);
   color: #fff;
   padding: 0.5rem 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.3rem;
+  text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* height: 3.5rem; */
-  height: 2rem;
   transition: 1s 1s opacity;
 }
+
+section#gallery-box figcaption a {
+  border-bottom: none;
+}
+section#gallery-box figcaption a:hover {
+  text-decoration: underline;
+}  
+
 
 /* image opened on click */
 .expanded {
@@ -962,6 +970,7 @@ div#graphic-gallery figure:nth-child(4) {
 
 section#gallery-box figure.expanded figcaption {
   opacity: 1;
+  
 }
 div.full figure:not(.expanded) {
   pointer-events: none;
