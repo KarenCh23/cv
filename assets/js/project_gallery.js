@@ -30,16 +30,17 @@ var modalInfo = {
     github: "#",
   },
   6: {
-    title: "Artaban",
-    info: "Réalisation de contenu web | Gestion du site e-commerce",
+    title: "Herbarium",
+    info: "Réalisation d'une série de contenus vidéos | PowerDirector  &  Canva Pro",
     link: "",
     github: "#",
   },
 };
 
-// Get the modal + modal details dvi
+// Get the modal + modal details div
 let modal = document.getElementById("preview");
 let modalDetails = document.getElementById("details");
+let linkBtn = document.getElementById("live");
 
 // button that opens the modal
 let projectBtn = document.getElementsByClassName("project-button");
@@ -52,6 +53,7 @@ for (let i = 0; i < projectBtn.length; i++) {
   projectBtn[i].addEventListener("click", function () {
     let project = projectBtn[i].parentElement;
     openModal(project);
+    fillOut(id, img);
   });
 }
 
@@ -69,20 +71,24 @@ function fillOut(id, img) {
   document.getElementById("info").innerHTML = modalInfo[id].info;
   document.getElementById("img").src = img;
 
-  modalInfo[id].link !== ""
-    ? (document.getElementById("live").onclick = function () {
-        window.open(modalInfo[id].link, "_blank");
-      })
-    : (document.getElementById("live").style.display = "none");
+  document.getElementById("live").onclick = function () {
+    window.open(modalInfo[id].link, "_blank");
+  };
+
+  if (modalInfo[id].link === "") {
+    document.getElementById("live").style.display = "none";
+  }
 }
 
 // close the modal //
 closeBtn.onclick = function () {
   modal.style.visibility = "hidden";
   modalDetails.style.display = "none";
+  linkBtn.style.display = "block";
 };
 
 modal.onclick = function () {
   modal.style.visibility = "hidden";
   modalDetails.style.display = "none";
+  linkBtn.style.display = "block";
 };
