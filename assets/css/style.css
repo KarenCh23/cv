@@ -967,9 +967,7 @@ img.fade {
   right: 0;
   z-index: 100000000;
   padding: 4.8rem 1.2rem;
-  background: rgb(121 117 121 / 23%);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  background: rgb(26 26 26 / 72%);
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -1009,6 +1007,7 @@ img.fade {
 }
 
 #details {
+  display: none;
   padding: 25px;
   text-align: left;
   position: relative;

@@ -37,9 +37,9 @@ var modalInfo = {
   },
 };
 
-// Get the modal
+// Get the modal + modal details dvi
 let modal = document.getElementById("preview");
-
+let modalDetails = document.getElementById("details");
 
 // button that opens the modal
 let projectBtn = document.getElementsByClassName("project-button");
@@ -60,6 +60,7 @@ function openModal(project) {
   let img = project.getElementsByTagName("img")[0].src;
   fillOut(id, img);
   modal.style.visibility = "visible";
+  modalDetails.style.display = "block";
   document.getElementsByClassName("modal-content")[0].classList.add("scale");
 }
 
@@ -68,20 +69,20 @@ function fillOut(id, img) {
   document.getElementById("info").innerHTML = modalInfo[id].info;
   document.getElementById("img").src = img;
 
-  if (modalInfo[id].link == "") {
-    document.getElementById("live").style.display = "none";
-  } else if (modalInfo[id].link !== "") {
-    document.getElementById("live").onclick = function () {
-      window.open(modalInfo[id].link, "_blank");
-    };
-  }
+  modalInfo[id].link !== ""
+    ? (document.getElementById("live").onclick = function () {
+        window.open(modalInfo[id].link, "_blank");
+      })
+    : (document.getElementById("live").style.display = "none");
 }
 
 // close the modal //
 closeBtn.onclick = function () {
   modal.style.visibility = "hidden";
+  modalDetails.style.display = "none";
 };
 
 modal.onclick = function () {
-    modal.style.visibility = "hidden";
-}
+  modal.style.visibility = "hidden";
+  modalDetails.style.display = "none";
+};
