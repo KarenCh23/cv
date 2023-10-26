@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>Karen Chamand - Web developper</title>
+  <title>Karen Chamand - Web developer</title>
   <!-- SEO -->
   <meta name="description" content="Je suis développeuse web front-end basée en Bretagne.">
   <meta property="og:title" content="Karen Chamand - Front-end developer">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
 </head>
- 
+
 <body class="is-preload">
   <!-- Wrapper -->
   <div id="wrapper">
@@ -319,52 +319,81 @@
           </div>
         </div>
       </article>
-      <!-- Last projects gallery -->
+
       <article id="project">
         <div>
           <h3 id="contact-title"></h3>
         </div>
-        <h2 class="major">Derniers projets</h2>
-        <div id="gallery-btn">
-          <button onclick="displayTimeOut()" id="graphic-btn" style="display: block;"> See All Web & Graphic
-            projects</button>
-        </div>
-        <section id="gallery-box">
-          <figure>
-            <img src="./images/project_img/jardins_khiron01.jpeg" alt="jardins-khiron">
-            <figcaption>Jardins de Khiron | HTML/CSS & JS</figcaption>
-          </figure>
-          <figure>
-            <img src="./images/project_img/couleurs_daurore01.jpg" alt="couleurs-aurore">
-            <figcaption>Couleurs d'Aurore | Wordpress</figcaption>
-          </figure>
-          <figure>
-            <img src="./images/project_img/nearby_homepage.png" alt="Nearby">
-            <figcaption>Nearby | React & Symfony | <a href="https://projet-nearby-front.vercel.app/" target="_blank">&#x27A4; Live Demo</a></figcaption>
-          </figure>
-          <figure>
-            <img src="./images/project_img/quali_extra_login.png" alt="Quali Extra">
-            <figcaption>QualiExtra | React & Node.JS | <a href="https://github.com/Qualiextra/quali-front" target="_blank">&#x27A4; Repo Github</a></figcaption>
-          </figure>
-        
-        
-          <div id="graphic-gallery" style="visibility: hidden;">
-            <figure>
-              <img src="./images/project_img/jardins_khiron_logo.png" alt="jardins-khiron-logo" loading="lazy">
-              <figcaption>Jardins de Khiron</figcaption>
-            </figure>
-            <figure>
-              <img src="./images/project_img/couleurs_aurore_logo.png" alt="couleurs-aurore-logo" loading="lazy">
-              <figcaption>Couleurs d'Aurore</figcaption>
-            </figure>
-            <figure>
-              <img src="./images/project_img/gifs/herbarium_project.gif" alt="herbarium-project" loading="lazy">
-              <figcaption>Herbarium videos</figcaption>
-            </figure>
-            <figure>
-              <img src="./images/project_img/scarabee_webcontent.jpeg" alt="le-scarabee">
-              <figcaption>Le Scarabée</figcaption>
-            </figure>
+        <h2 class="major">Projets</h2>
+        <!-- Projects gallery -->
+        <section id="gallery-grid">
+          <div class="gallery-container">
+            <div class="item" id="1">
+              <img class="gallery-img" src="./images/project_img/quali_extra_login.png" alt="QualiExtra">
+              <div class="text">
+                <h3>QualiExtra</h4>
+                  <p>Site Web</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+
+            <div class="item" id="2">
+              <img class="gallery-img" src="./images/project_img/nearby_homepage.png" alt="Nearby">
+              <div class="text">
+                <h3>Nearby</h4>
+                  <p>Site Web</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+
+            <div class="item" id="3">
+              <img class="gallery-img" src="./images/project_img/jardins_khiron01.jpeg" alt="Jardins de Khiron">
+              <div class="text">
+                <h3>Jardins de Khiron</h4>
+                  <p>Site Web</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+
+            <div class="item" id="4">
+              <img class="gallery-img" src="./images/project_img/couleurs_daurore01.jpg" alt="Couleurs d'Aurore">
+              <div class="text">
+                <h3>Couleurs d'Aurore</h4>
+                  <p>Site Web</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+
+            <div class="item" id="5">
+              <img class="gallery-img" src="./images/project_img/scarabee_webcontent.jpeg" alt="le scarabee">
+              <div class="text">
+                <h3>Le Scarabée</h4>
+                  <p>Graphic design</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+
+            <div class="item" id="6">
+              <img class="gallery-img" src="./images/project_img/artaban01.jpeg" alt="artaban">
+              <div class="text">
+                <h3>Artaban</h4>
+                  <p>Site e-commerce</p>
+              </div>
+              <div class="project-button">Voir</div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div id="preview" class="modal">
+            <button class="modal-close">&#x2715;</button>
+            <div class="modal-content">
+              <img id="img" src="">
+              <div id="details">
+                <h3 id="title"></h3>
+                <p id="info"></p>
+                <div class="project-button" id="live">Lien du projet</div>
+              </div>
+            </div>
           </div>
         </section>
       </article>
@@ -388,9 +417,10 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/animation.js" defer></script>
+  <script src="assets/js/animation.js"></script>
   <script src="assets/js/skills_animation.js" async></script>
   <script src="assets/js/gallery_animation.js" async></script>
+  <script src="assets/js/project_gallery.js"></script>
 
 </body>
 </html>
