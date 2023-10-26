@@ -1031,6 +1031,7 @@ img.fade {
 }
 
 #details .project-button {
+  display: block;
   position: absolute;
   background-color: #202324;
   color: #f5f5f5;
