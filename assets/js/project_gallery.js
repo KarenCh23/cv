@@ -30,8 +30,8 @@ var modalInfo = {
     github: "#",
   },
   6: {
-    title: "Artaban",
-    info: "Réalisation de contenu web | Gestion du site e-commerce",
+    title: "Herbarium",
+    info: "Réalisation d'une série de contenus vidéos | PowerDirector  &  Canva Pro",
     link: "",
     github: "#",
   },
