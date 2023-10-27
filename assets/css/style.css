@@ -883,7 +883,7 @@ img.fade {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 90vw;
 }
 
 .item {
@@ -966,7 +966,7 @@ img.fade {
   left: 0;
   right: 0;
   z-index: 100000000;
-  padding: 4.8rem 1.2rem;
+  padding: 1rem 1.2rem;
   background: rgb(26 26 26 / 72%);
   display: flex;
   justify-content: center;
@@ -978,8 +978,7 @@ img.fade {
   transform: none;
   width: 100%;
   max-width: 700px;
-  height: -moz-fit-content;
-  height: fit-content;
+  max-height: 90vh;
   border-radius: 1rem;
   overflow: hidden;
   background: rgb(239 239 239);
@@ -1035,9 +1034,9 @@ img.fade {
   background-color: #202324;
   color: #f5f5f5;
   text-align: center;
+  margin-top: 1rem;
   left: 25px;
-  bottom: 20px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
 }
 
