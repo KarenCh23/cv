@@ -967,7 +967,7 @@ img.fade {
   right: 0;
   z-index: 100000000;
   padding: 1rem 1.2rem;
-  background: rgb(26 26 26 / 72%);
+  background: rgb(9 9 9 / 89%);
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -1054,7 +1054,7 @@ i:hover {
   opacity: 0.8;
 }
 
-/* Close Button */
+/* Modal Close Button */
 .modal-close {
   background: none;
   box-shadow: none;
