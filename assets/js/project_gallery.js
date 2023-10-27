@@ -31,7 +31,7 @@ var modalInfo = {
   },
   6: {
     title: "Artaban",
-    info: "Réalisation de contenus web | Gestion du site e-commerce",
+    info: "Création de contenus web | Gestion du site e-commerce",
     link: "",
     github: "#",
   },
