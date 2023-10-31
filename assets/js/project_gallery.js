@@ -53,7 +53,6 @@ for (let i = 0; i < projectBtn.length; i++) {
   projectBtn[i].addEventListener("click", function () {
     let project = projectBtn[i].parentElement;
     openModal(project);
-    fillOut(id, img);
   });
 }
 
