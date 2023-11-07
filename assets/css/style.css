@@ -1048,10 +1048,9 @@ img.fade {
   color: #01a2ac;
 }
 
-#details .project-button:hover,
-i:hover {
+#details .project-button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* Modal Close Button */
