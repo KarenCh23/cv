@@ -53,6 +53,9 @@ for (let i = 0; i < projectBtn.length; i++) {
   projectBtn[i].addEventListener("click", function () {
     let project = projectBtn[i].parentElement;
     openModal(project);
+    if (window.scrollY) {
+      window.scroll(0, 0); // reset the scroll position to the top 
+    }
   });
 }
 
@@ -91,3 +94,6 @@ modal.onclick = function () {
   modalDetails.style.display = "none";
   linkBtn.style.display = "block";
 };
+
+
+

@@ -976,6 +976,9 @@ img.fade {
 .modal .modal-content {
   opacity: 1;
   transform: none;
+  height: 700px;
+  width: 700px;
+  position: fixed;
   width: 100%;
   max-width: 700px;
   max-height: 90vh;
