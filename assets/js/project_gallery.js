@@ -1,7 +1,7 @@
 var modalInfo = {
   1: {
     title: "QualiExtra",
-    info: "Application de gestion hôtelière | Next.Js (React) & Node.Js (back)",
+    info: "Application de gestion hôtelière | Next.Js (React) & Node.Js (back) | Intégration de maquettes depuis Figma",
     link: "https://github.com/Qualiextra/quali-front",
     github: "#",
   },
