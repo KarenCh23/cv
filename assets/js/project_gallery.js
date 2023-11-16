@@ -13,7 +13,7 @@ var modalInfo = {
   },
   3: {
     title: "Jardins de Khiron",
-    info: "Thème réalisé pour un domaine / jardin pédagogique |  Html,Css & JS",
+    info: "Site e-commerce réalisé pour un domaine / jardin pédagogique |  Html,Css & JS",
     link: "",
     github: "#",
   },
