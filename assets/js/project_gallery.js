@@ -2,37 +2,37 @@ var modalInfo = {
   1: {
     title: "QualiExtra",
     info: "Application de gestion hôtelière | Next.Js (React) & Node.Js (back) | Intégration de maquettes (Figma)",
-    link: "https://github.com/Qualiextra/quali-front",
+    link: "https://github.com/Qualiextra",
     github: "#",
   },
   2: {
     title: "Nearby",
     info: "Site vitrine de producteurs régionaux | React & Symfony",
-    link: "https://projet-nearby-front.vercel.app/",
+    link: "https://github.com/KarenCh23/Nearby",
     github: "#",
   },
   3: {
     title: "Jardins de Khiron",
     info: "Site e-commerce réalisé pour un domaine / jardin pédagogique |  Html,Css & JS",
-    link: "",
+    link: "https://dribbble.com/shots/23775593-Jardins-de-Khiron",
     github: "#",
   },
   4: {
     title: "Couleurs d'Aurore",
     info: "Site vitrine pour une productrice florale | Wordpress",
-    link: "",
+    link: "https://dribbble.com/shots/23775254-Couleurs-d-Aurore",
     github: "#",
   },
   5: {
     title: "Le Scarabée",
     info: "Création de contenus digitaux | Création de l'identité graphique",
-    link: "",
+    link: "https://dribbble.com/shots/23739652-Le-Scarabee",
     github: "#",
   },
   6: {
     title: "Artaban",
     info: "Création de contenus web | Gestion du site e-commerce",
-    link: "",
+    link: "https://dribbble.com/shots/23738286-Artaban-Web-Design",
     github: "#",
   },
 };
