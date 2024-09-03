@@ -66,7 +66,7 @@ class TextScramble {
 let phrases = [
   "Bienvenue !",
   "Je m'appelle Karen",
-  "développeuse web front-end",
+  "graphiste",
   "webdesigner",
   "découvrez mon profil !",
 ];
